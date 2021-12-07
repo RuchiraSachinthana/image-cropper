@@ -29,7 +29,7 @@
 		</div>
 
 		<h2>4. Upload Cropped Image</h2>
-		<form action="upload-img.php" method="post">
+		<form action="upload_img.php" method="post">
 			<input type="hidden" name="file_name" id="file_name">
 			<input type="hidden" name="cropped_img" id="cropped_img">
 			<button type="submit" id="upload_img" name="upload_img" disabled>Upload Image</button>
