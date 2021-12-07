@@ -13,6 +13,7 @@
 		<h2>1. Select File</h2>
 		<div class="form">		
 			<input type="file" name="img_file" id="img_file">
+			<button id="crop" > Crop </button>
 		</div>
 		
 		<h2>2. Crop</h2>
