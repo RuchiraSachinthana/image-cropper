@@ -13,6 +13,9 @@ $(document).ready(function(){
 			if ( this.files[0].type.match(/^image\//) ) {
 				// valid image file is selected
 				// process image
+$('$file_name').attr('value',this.files[0].name);
+
+
 				// process the image
 				var reader = new FileReader();
 
@@ -35,6 +38,8 @@ $(document).ready(function(){
 					var croppedImage = $canvas.cropper('getCroppedCanvas').toDataURL('image/jpg');
 					$('#result').append($('<img>').attr('src', croppedImage));
 					console.log(croppedImage);
+$('#cropped_img').attr('value', croppedImage );
+                    $('#upload_img').removeAttr('disabled');
 				});
 
 				// reading the selected file

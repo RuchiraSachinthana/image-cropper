@@ -13,7 +13,7 @@
 		<h2>1. Select File</h2>
 		<div class="form">		
 			<input type="file" name="img_file" id="img_file">
-			<button id="crop" > Crop </button>
+			<button id="crop">Crop</button>
 		</div>
 		
 		<h2>2. Crop</h2>
@@ -29,6 +29,11 @@
 		</div>
 
 		<h2>4. Upload Cropped Image</h2>
+		<form action="upload-img.php" method="post">
+			<input type="hidden" name="file_name" id="file_name">
+			<input type="hidden" name="cropped_img" id="cropped_img">
+			<button type="submit" id="upload_img" name="upload_img" disabled>Upload Image</button>
+		</form>
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
